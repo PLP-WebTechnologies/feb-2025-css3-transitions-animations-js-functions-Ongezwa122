@@ -1,1 +1,67 @@
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+  }
+  button:hover {
+    background-color: rgb(144, 238, 144);
+  }
+  #secret {
+    display: none;
+    color: rgb(255, 0, 0);
+  }
+  .tabs {
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .tab {
+    padding: 10px;
+    background: rgb(238, 238, 238);
+    margin-right: 5px;
+  }
+  .tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+  }
+  .active-tab {
+    display: block;
+  }
+  #gallery img {
+    width: 200px;
+    height: auto;
+    display: none;
+  }
+  #gallery img.active {
+    display: block;
+  }
+  .error {
+    color: hsl(0, 100%, 50%);
+    font-size: 12px;
+  }
+  /* CSS animation */
+  .pulse {
+    animation: pulseAnim 0.5s;
+  }
+  @keyframes pulseAnim {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

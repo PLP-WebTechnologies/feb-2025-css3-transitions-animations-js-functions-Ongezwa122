@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuralGrowth</title>
+    <link rel="stylesheet" href="style7.css" />
+  </head>
+  <body>
+    <h1>Welcome to RuralGrowth</h1>
+    <p>Discover the freshest organic produce delivered to your doorstep.</p>
+    <p>
+      Click the button to change the image and double-click to reveal a secret
+      message!
+    </p>
+    <p id="secret">🎉 You discovered the secret action! 🎉</p>
 
+    <div id="gallery">
+      <img
+        class="active"
+        src="https://images.pexels.com/photos/8540933/pexels-photo-8540933.jpeg"
+        alt="Fresh Produce"
+      />
+      <img
+        src="https://images.pexels.com/photos/27173521/pexels-photo-27173521/free-photo-of-abundance-of-fruit-at-bazaar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="fruits"/>
+      <img
+        src="https://images.pexels.com/photos/28220076/pexels-photo-28220076/free-photo-of-a-man-sitting-under-an-umbrella-in-a-market.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="men under an umbrella in a market"/>
+      <button id="changeBtn">Change Image</button>
+    </div>
+
+    <div class="tabs">
+      <div class="tab" data-tab="description">Description</div>
+      <div class="tab" data-tab="reviews">Reviews</div>
+    </div>
+    <div id="description" class="tab-content active-tab">
+      This is a fresh organic product from the garden to your home in no
+      seconds.
+    </div>
+    <div id="reviews" class="tab-content">
+      Customers love this product so much ⭐⭐⭐⭐⭐!
+    </div>
+
+    <form id="signupForm">
+      <h3>Signup Form</h3>
+      <label>Email: <input type="email" id="email" /></label><br />
+      <span id="emailError" class="error"></span><br />
+      <label>Password: <input type="password" id="password" /></label><br />
+      <span id="passError" class="error"></span><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="java7.js"></script>
+  </body>
+</html>
